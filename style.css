@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,400;1,300&display=swap");
+
+:root {
+  --colorWhite: #fff;
+  --borderRadius: 5px;
+  --font: "Roboto Serif", serif;
+  --none: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, rgb(112, 111, 111), rgb(207, 207, 207), aliceblue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.showcase {
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 100%);
+  padding: 20px;
+  border-radius: var(--borderRadius);
+  line-height: 13px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+@media (max-width: 656px) {
+  .showcase button {
+    width: 30%;
+    border: var(--border);
+    border-radius: var(--borderRadius);
+  }
+  .showcase input {
+    width: 60%;
+    border: var(--border);
+    outline: var(--none);
+    border-radius: var(--borderRadius);
+  }
+
+  .container {
+    height: 90vh;
+  }
+}
+
+.showcase input {
+  border: var(--none);
+  outline: var(--none);
+  border-radius: var(--borderRadius);
+}
+
+.showcase button {
+  border: var(--none);
+  padding: 5px 7px;
+  border-radius: var(--borderRadius);
+}
+
+.results > p,
+p#namecity,
+.weather > p,
+h2 {
+  color: var(--colorWhite);
+  font-family: var(--font);
+}
+
+#namecity {
+  font-size: 20px;
+}
+
+#nosuchcity {
+  color: rgb(255, 0, 0);
+}
